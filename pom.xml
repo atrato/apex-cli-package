@@ -7,14 +7,14 @@
   <parent>
     <groupId>org.apache.apex</groupId>
     <artifactId>apex</artifactId>
-    <version>3.5.0</version>
+    <version>3.6.0</version>
   </parent>
 
   <groupId>io.atrato</groupId>
   <artifactId>apex-cli-package</artifactId>
 
   <properties>
-    <apex.version>3.5.0</apex.version>
+    <apex.version>${project.version}</apex.version>
   </properties>
 
   <build>
@@ -128,7 +128,7 @@
                   <goal>wget</goal>
                 </goals>
                 <configuration>
-                  <url>https://raw.githubusercontent.com/apache/apex-core/v3.5.0/engine/src/main/scripts/apex</url>
+                  <url>https://raw.githubusercontent.com/apache/apex-core/v${apex.version}/engine/src/main/scripts/apex</url>
                   <outputDirectory>${project.build.directory}/scripts</outputDirectory>
                   <md5>f7c1113407041cf55430709b01d9211f</md5>
                 </configuration>
